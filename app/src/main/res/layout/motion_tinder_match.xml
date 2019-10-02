@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/scene_tinder_match"
+    app:showPaths="false">
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeState"
+        android:background="@drawable/ic_close" />
+
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/man_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:elevation="2dp"
+        android:onClick="changeState"
+        android:src="@drawable/man_profile"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/woman_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:elevation="2dp"
+        android:onClick="changeState"
+        android:src="@drawable/woman_profile"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="2dp" />
+
+
+    <TextView
+        android:id="@+id/match_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script_bold"
+        android:text="It's a Match!!"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/heart_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_heart" />
+
+    <ImageView
+        android:id="@+id/heart_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_heart" />
+
+    <ImageView
+        android:id="@+id/heart_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_heart" />
+
+    <ImageView
+        android:id="@+id/heart_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_heart" />
+
+    <Button
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHAT"
+        android:textColor="@android:color/holo_blue_light"
+        android:background="@drawable/button_background"
+        android:fontFamily="monospace"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="0"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -24,4 +24,13 @@ class ExampleActivity : AppCompatActivity() {
         }
         (container as? MotionLayout)?.setDebugMode(debugMode)
     }
+
+    fun changeState(v: View?) {
+        val motionLayout = container as? MotionLayout ?: return
+        if (motionLayout.progress > 0.5f) {
+            motionLayout.transitionToStart()
+        } else {
+            motionLayout.transitionToEnd()
+        }
+    }
 }
