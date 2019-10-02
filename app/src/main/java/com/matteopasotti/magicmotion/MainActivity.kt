@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
 
     private val dataset: Array<ExampleAdapter.Example> = arrayOf(
         ExampleAdapter.Example("Basic Example (1/3)", R.layout.motion_01_basic),
-        ExampleAdapter.Example("Basic Example (2/3)", R.layout.motion_01_basic),
-        ExampleAdapter.Example("Basic Example (3/3)", R.layout.motion_01_basic)
+        ExampleAdapter.Example("Basic Example (2/3)", R.layout.motion_02_basic),
+        ExampleAdapter.Example("Basic Example (3/3)", R.layout.motion_03_basic)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
