@@ -7,19 +7,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:motionDebug="SHOW_ALL">
 
-
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:elevation="1dp"
-        android:background="@android:color/holo_blue_bright"/>
+        android:background="@drawable/button_background">
 
-    <FrameLayout
+        <ImageView
+            android:id="@+id/image_top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/woman_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/image_top_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:elevation="2dp"
+            android:text="Laura"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/colorAccent" />
+        android:background="@drawable/button_background">
+
+        <ImageView
+            android:id="@+id/image_bottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/woman_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="30dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/image_bottom_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:elevation="2dp"
+            android:text="Laura"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 

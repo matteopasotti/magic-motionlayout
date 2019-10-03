@@ -70,7 +70,7 @@ class ExampleActivity : AppCompatActivity() {
     }
 
     private fun bindCard(model : SwipeModel) {
-        topCard.background = getDrawable(model.top.image)
-        bottomCard.background = getDrawable(model.bottom.image)
+        image_top.background = getDrawable(model.top.image)
+        image_bottom.background = getDrawable(model.bottom.image)
     }
 }
