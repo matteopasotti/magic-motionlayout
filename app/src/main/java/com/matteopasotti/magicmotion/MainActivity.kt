@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
         ExampleAdapter.Example("Basic Example (1/3)", R.layout.motion_01_basic),
         ExampleAdapter.Example("Basic Example (2/3)", R.layout.motion_02_basic),
         ExampleAdapter.Example("Basic Example (3/3)", R.layout.motion_03_basic),
-        ExampleAdapter.Example("Tinder Match", R.layout.motion_tinder_match)
+        ExampleAdapter.Example("Tinder Match", R.layout.motion_tinder_match),
+        ExampleAdapter.Example("Tinder Swipe", R.layout.motion_swipe_cards)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
