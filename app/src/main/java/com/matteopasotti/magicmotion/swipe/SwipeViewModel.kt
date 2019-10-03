@@ -13,10 +13,10 @@ class SwipeViewModel : ViewModel() {
         get() = stream
 
     private val data = listOf(
-        SwipeCardModel(image = R.drawable.woman_profile),
-        SwipeCardModel(image = R.drawable.jennifer),
-        SwipeCardModel(image = R.drawable.scarlett),
-        SwipeCardModel(image = R.drawable.woman_profile)
+        SwipeCardModel(image = R.drawable.margot, name = "Margot"),
+        SwipeCardModel(image = R.drawable.jennifer, name = "Jennifer"),
+        SwipeCardModel(image = R.drawable.scarlett_2, name = "Scarlett"),
+        SwipeCardModel(image = R.drawable.margot, name = "Margot")
     )
     private var currentIndex = 0
 
