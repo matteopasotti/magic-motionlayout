@@ -16,7 +16,7 @@
 
 
         <Constraint
-            android:id="@+id/button"
+            android:id="@+id/ufo"
             android:layout_width="64dp"
             android:layout_height="64dp"
             motion:layout_constraintBottom_toTopOf="@+id/buttons"
@@ -35,7 +35,7 @@
     <ConstraintSet android:id="@+id/end">
 
         <Constraint
-            android:id="@+id/button"
+            android:id="@+id/ufo"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginTop="40dp"
@@ -55,7 +55,7 @@
     <ConstraintSet android:id="@+id/left">
 
         <Constraint
-            android:id="@+id/button"
+            android:id="@+id/ufo"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginTop="40dp"
@@ -67,7 +67,7 @@
     <ConstraintSet android:id="@+id/right">
 
         <Constraint
-            android:id="@+id/button"
+            android:id="@+id/ufo"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginTop="40dp"

@@ -4,15 +4,15 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/space_bg"
     app:layoutDescription="@xml/scene_programmatic">
 
 
-    <View
-        android:id="@+id/button"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:background="@color/colorAccent"
-        android:text="Button" />
+    <ImageView
+        android:id="@+id/ufo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_ufo"/>
 
 
     <LinearLayout
