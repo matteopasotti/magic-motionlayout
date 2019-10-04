@@ -87,47 +87,37 @@
 
             <!--MAN IMAGE -->
             <KeyAttribute
-                android:scaleX="3"
-                android:scaleY="3"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
                 motion:framePosition="100"
                 motion:motionTarget="@id/man_image"/>
 
             <KeyAttribute
                 android:rotationY="-100"
-                motion:framePosition="30"
+                motion:framePosition="50"
                 motion:motionTarget="@id/man_image"/>
 
             <KeyAttribute
-                android:rotationY="-50"
-                motion:framePosition="60"
-                motion:motionTarget="@id/man_image"/>
-
-            <KeyAttribute
-                android:rotationY="-30"
-                motion:framePosition="80"
+                android:rotationY="-180"
+                motion:framePosition="100"
                 motion:motionTarget="@id/man_image"/>
 
             <!-- WOMAN IMAGE -->
 
             <KeyAttribute
-                android:scaleX="3"
-                android:scaleY="3"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
                 motion:framePosition="100"
                 motion:motionTarget="@id/woman_image"/>
 
             <KeyAttribute
-                android:rotationY="-100"
-                motion:framePosition="30"
+                android:rotationY="100"
+                motion:framePosition="50"
                 motion:motionTarget="@id/woman_image"/>
 
             <KeyAttribute
-                android:rotationY="-50"
-                motion:framePosition="60"
-                motion:motionTarget="@id/woman_image"/>
-
-            <KeyAttribute
-                android:rotationY="-30"
-                motion:framePosition="80"
+                android:rotationY="180"
+                motion:framePosition="100"
                 motion:motionTarget="@id/woman_image"/>
 
 
@@ -215,20 +205,6 @@
         </Constraint>
 
         <Constraint
-            android:id="@+id/view_background"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent">
-            <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@android:color/holo_blue_dark"/>
-
-        </Constraint>
-
-        <Constraint
             android:id="@+id/woman_image"
             android:layout_width="64dp"
             android:layout_height="64dp"
@@ -254,12 +230,8 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="30dp"
-            android:alpha="0">
+            android:alpha="0"/>
 
-            <CustomAttribute
-                motion:attributeName="padding"
-                motion:customDimension="10dp"/>
-        </Constraint>
 
     </ConstraintSet>
 
@@ -330,20 +302,6 @@
             motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint
-            android:id="@+id/view_background"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent">
-            <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="@android:color/holo_blue_bright"/>
-
-        </Constraint>
-
-        <Constraint
             android:id="@+id/woman_image"
             android:layout_width="64dp"
             android:layout_height="64dp"
@@ -372,13 +330,7 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="30dp"
-            android:alpha="1">
-
-            <CustomAttribute
-                motion:attributeName="padding"
-                motion:customDimension="10dp"/>
-
-        </Constraint>
+            android:alpha="1"/>
 
         <Constraint
             android:id="@+id/arrow"
