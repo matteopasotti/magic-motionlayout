@@ -2,6 +2,7 @@ package com.matteopasotti.magicmotion
 
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.motion.widget.TransitionAdapter
@@ -19,6 +20,10 @@ class ExampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         val layout = intent.getIntExtra("layout_file_id", R.layout.motion_01_basic)
         setContentView(layout)
@@ -58,6 +63,35 @@ class ExampleActivity : AppCompatActivity() {
 
             })
         }
+    }
+
+    fun buttonPressed(v: View?) {
+
+        val motionLayout = container as? MotionLayout ?: return
+
+        if(v != null) {
+            val buttonName = resources.getResourceEntryName(v.id)
+
+            if(buttonName == "left") {
+                motionLayout.transitionToState(R.id.left)
+            }
+
+            if(buttonName == "base") {
+                motionLayout.transitionToState(R.id.end)
+            }
+
+            if(buttonName == "right") {
+                motionLayout.transitionToState(R.id.right)
+            }
+        }
+
+
+
+        /*if (motionLayout.progress > 0.5f) {
+            motionLayout.transitionToStart()
+        } else {
+            motionLayout.transitionToEnd()
+        }*/
     }
 
     fun changeState(v: View?) {
