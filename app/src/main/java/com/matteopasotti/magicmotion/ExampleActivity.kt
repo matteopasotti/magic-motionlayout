@@ -16,8 +16,6 @@ class ExampleActivity : AppCompatActivity() {
 
     private lateinit var container: View
 
-    private var viewModel : SwipeViewModel? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -84,14 +82,6 @@ class ExampleActivity : AppCompatActivity() {
                 motionLayout.transitionToState(R.id.right)
             }
         }
-
-
-
-        /*if (motionLayout.progress > 0.5f) {
-            motionLayout.transitionToStart()
-        } else {
-            motionLayout.transitionToEnd()
-        }*/
     }
 
     fun changeState(v: View?) {

@@ -5,8 +5,7 @@
     <Transition
         motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end"
-        motion:duration="1000"
-        >
+        motion:duration="1000">
         <OnSwipe
             motion:touchAnchorId="@+id/button"
             motion:touchAnchorSide="right"
@@ -33,7 +32,7 @@
             android:id="@+id/button"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:layout_marginStart="8dp"
+             android:layout_marginStart="8dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent" >
