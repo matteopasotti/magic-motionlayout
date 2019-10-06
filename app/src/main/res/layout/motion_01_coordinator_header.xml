@@ -17,7 +17,7 @@
         android:layout_height="200dp"
         android:background="@color/colorAccent"
         android:scaleType="centerCrop"
-        android:src="@drawable/ny_time_square"/>
+        android:src="@drawable/london"/>
 
     <TextView
         android:id="@+id/label"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:transformPivotX="0dp"
         android:transformPivotY="0dp"
-        android:text="New York"
+        android:text="London"
         android:textColor="#FFF"
         android:textSize="32dp" />
 

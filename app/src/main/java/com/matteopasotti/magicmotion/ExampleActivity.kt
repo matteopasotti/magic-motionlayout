@@ -3,6 +3,7 @@ package com.matteopasotti.magicmotion
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.motion.widget.TransitionAdapter
@@ -27,6 +28,11 @@ class ExampleActivity : AppCompatActivity() {
         setContentView(layout)
 
         container = findViewById(R.id.motionLayout)
+
+        if (layout == R.layout.motion_02_coordinator) {
+            val icon = findViewById<ImageView>(R.id.icon)
+            icon?.clipToOutline = true
+        }
 
         val debugMode = if (intent.getBooleanExtra("showPaths", false)) {
             MotionLayout.DEBUG_SHOW_PATH
