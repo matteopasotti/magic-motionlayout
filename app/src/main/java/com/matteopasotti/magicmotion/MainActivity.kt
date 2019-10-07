@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
         ExampleAdapter.Example("CoordinatorLayout (2/2)", R.layout.motion_02_coordinator),
         ExampleAdapter.Example("Program", R.layout.motion_programmatic),
         ExampleAdapter.Example("Tinder Match", R.layout.motion_tinder_match),
-        ExampleAdapter.Example("Tinder Swipe", R.layout.motion_swipe_cards)
+        ExampleAdapter.Example("Tinder Swipe", R.layout.motion_swipe_cards),
+        ExampleAdapter.Example("Button chat", R.layout.motion_button_chat),
+        ExampleAdapter.Example("ImageFilter", R.layout.motion_image_filter_poke)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

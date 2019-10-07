@@ -11,16 +11,6 @@
         <ConstraintSet android:id="@+id/start">
 
             <Constraint
-                android:id="@id/background"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintVertical_bias="0.38" />
-
-            <Constraint
                 android:id="@id/name"
                 android:layout_width="162dp"
                 android:layout_height="41dp"
@@ -70,16 +60,6 @@
         </ConstraintSet>
 
         <ConstraintSet android:id="@+id/end">
-            <Constraint
-                android:id="@id/background"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:visibility="invisible"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintVertical_bias="0.38" />
 
             <Constraint
                 android:id="@id/name"

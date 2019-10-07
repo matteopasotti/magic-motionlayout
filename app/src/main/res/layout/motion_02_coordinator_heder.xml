@@ -4,25 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
     android:orientation="vertical"
+    android:background="@android:color/black"
     app:layoutDescription="@xml/scene_coord_02"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minHeight="50dp"
     android:fitsSystemWindows="false"
     app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
-
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:tint="@color/tintImage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        app:srcCompat="@drawable/london" />
 
     <TextView
         android:id="@+id/name"
