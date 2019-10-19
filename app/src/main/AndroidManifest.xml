@@ -27,5 +27,12 @@
             android:name=".ExampleActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".gallery.ShoesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".youtube.YoutubeActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 </manifest>

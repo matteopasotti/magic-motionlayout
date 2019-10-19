@@ -19,4 +19,13 @@
         fugiat quo voluptas nulla pariatur? \n\n
 
     </string>
+    <string name="descr">
+        The Nike Air Force 1 AF-1 puts a fun, playful twist on a classic design. \n
+        Using a layered approach, double the branding and an exaggerated midsole, \n
+        it highlights AF-1 DNA.
+    </string>
+    <string name="title_home">home</string>
+    <string name="title_trending">trending</string>
+    <string name="title_subscriptions">subscriptions</string>
+    <string name="title_inbox">inbox</string>
 </resources>

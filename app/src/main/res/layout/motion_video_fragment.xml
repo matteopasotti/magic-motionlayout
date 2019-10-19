@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.matteopasotti.magicmotion.youtube.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoMotionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_youtube"
+    android:background="@android:color/black">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/videoViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.matteopasotti.magicmotion.youtube.VideoView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@null"
+        android:elevation="10dp"
+        android:paddingEnd="@dimen/video_view_right_padding"
+        android:scaleType="centerCrop"
+        android:src="@drawable/joker_1"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewContainer"
+        app:layout_constraintEnd_toEndOf="@+id/videoViewContainer"
+        app:layout_constraintStart_toStartOf="@+id/videoViewContainer"
+        app:layout_constraintTop_toTopOf="@+id/videoViewContainer" />
+
+</com.matteopasotti.magicmotion.youtube.SingleViewTouchableMotionLayout>

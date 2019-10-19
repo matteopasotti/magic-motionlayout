@@ -27,7 +27,7 @@
                 motion:framePosition="100"
                 motion:motionTarget="@id/btn_chat"
                 motion:waveOffset="0dp"
-                motion:wavePeriod="3"
+                motion:wavePeriod="1"
                 motion:waveShape="bounce" />
 
         </KeyFrameSet>

@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.matteopasotti.magicmotion.adapter.ExampleAdapter
+import com.matteopasotti.magicmotion.gallery.ShoesActivity
+import com.matteopasotti.magicmotion.youtube.YoutubeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener {
@@ -26,7 +28,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
         ExampleAdapter.Example("Tinder Match", R.layout.motion_tinder_match),
         ExampleAdapter.Example("Tinder Swipe", R.layout.motion_swipe_cards),
         ExampleAdapter.Example("Button chat", R.layout.motion_button_chat),
-        ExampleAdapter.Example("ImageFilter", R.layout.motion_image_filter_poke)
+        ExampleAdapter.Example("ImageFilter", R.layout.motion_image_filter_poke),
+        ExampleAdapter.Example("Joker", R.layout.activity_youtube, YoutubeActivity::class.java)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,6 +52,7 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
             putExtra("layout_file_id", layoutFileId)
             putExtra("showPaths", doShowPaths)
         }
+
         startActivity(intent)
     }
 
