@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
         ExampleAdapter.Example("Tinder Swipe", R.layout.motion_swipe_cards),
         ExampleAdapter.Example("Button chat", R.layout.motion_button_chat),
         ExampleAdapter.Example("ImageFilter", R.layout.motion_image_filter_poke),
-        ExampleAdapter.Example("Joker", R.layout.activity_youtube, YoutubeActivity::class.java)
+        ExampleAdapter.Example("Joker", R.layout.activity_youtube, YoutubeActivity::class.java),
+        ExampleAdapter.Example("Menu Buttons", R.layout.motion_menu_buttons)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
