@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:motion="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
         android:id="@+id/startToEnd"
@@ -9,20 +8,15 @@
         app:constraintSetStart="@+id/start"
         app:duration="1000">
         <OnClick
-            motion:clickAction="transitionToEnd|transitionToStart"
-            motion:targetId="@id/item_add" />
+            app:clickAction="transitionToEnd|transitionToStart"
+            app:targetId="@id/item_add" />
 
         <KeyFrameSet>
 
             <KeyAttribute
                 android:alpha="0"
-                app:framePosition="0"
-                app:motionTarget="@id/item_fav" />
-
-            <KeyAttribute
-                android:alpha="0"
                 android:translationY="48dp"
-                app:framePosition="80"
+                app:framePosition="35"
                 app:motionTarget="@id/item_fav" />
 
             <KeyPosition
@@ -34,13 +28,8 @@
 
             <KeyAttribute
                 android:alpha="0"
-                app:framePosition="0"
-                app:motionTarget="@id/item_child" />
-
-            <KeyAttribute
-                android:alpha="0"
                 android:translationY="48dp"
-                app:framePosition="85"
+                app:framePosition="45"
                 app:motionTarget="@id/item_child" />
 
             <KeyPosition
@@ -52,13 +41,8 @@
 
             <KeyAttribute
                 android:alpha="0"
-                app:framePosition="0"
-                app:motionTarget="@id/item_audio" />
-
-            <KeyAttribute
-                android:alpha="0"
                 android:translationY="48dp"
-                app:framePosition="90"
+                app:framePosition="60"
                 app:motionTarget="@id/item_audio" />
 
             <KeyPosition
@@ -106,28 +90,31 @@
         </Constraint>
 
 
-        <Constraint android:id="@+id/item_fav"
-            app:layout_constraintBottom_toTopOf="@+id/item_add"
-            app:layout_constraintStart_toEndOf="@+id/item_add"
-            android:layout_marginStart="100dp">
+        <Constraint android:id="@+id/item_fav">
+            <Layout
+                app:layout_constraintBottom_toTopOf="@+id/item_add"
+                app:layout_constraintStart_toEndOf="@+id/item_add"
+                app:layout_marginStart="100dp"/>
             <PropertySet app:alpha="1" />
         </Constraint>
 
-        <Constraint android:id="@+id/item_child"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/item_add"
-            app:layout_constraintEnd_toStartOf="@+id/item_fav"
-            android:layout_marginEnd="8dp">
+        <Constraint android:id="@+id/item_child">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/item_add"
+                app:layout_constraintEnd_toStartOf="@+id/item_fav"
+                app:layout_marginEnd="8dp"/>
             <PropertySet app:alpha="1" />
         </Constraint>
 
-        <Constraint android:id="@+id/item_audio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/item_add"
-            app:layout_constraintEnd_toStartOf="@+id/item_child">
+        <Constraint android:id="@+id/item_audio">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="wrap_content"
+                app:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/item_add"
+                app:layout_constraintEnd_toStartOf="@+id/item_child"/>
             <PropertySet app:alpha="1" />
         </Constraint>
 
