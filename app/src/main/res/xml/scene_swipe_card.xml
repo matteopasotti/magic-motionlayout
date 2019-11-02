@@ -9,7 +9,7 @@
 
         <OnSwipe
             app:dragDirection="dragLeft"
-            app:onTouchUp="autoComplete"
+            app:autoComplete="true"
             app:touchAnchorId="@+id/topCard"
             app:touchAnchorSide="left"
             app:touchRegionId="@+id/topCard" />
@@ -24,7 +24,7 @@
 
         <OnSwipe
             app:dragDirection="dragRight"
-            app:onTouchUp="autoCompleteToStart"
+            app:autoComplete="true"
             app:touchAnchorId="@+id/topCard"
             app:touchAnchorSide="right"
             app:touchRegionId="@+id/topCard" />
