@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#80deea</color>
     <color name="tintImage">#41000000</color>
+    <color name="fui_transparent">#00000000</color>
+
+
+    <color name="black60">#14000000</color>
 </resources>

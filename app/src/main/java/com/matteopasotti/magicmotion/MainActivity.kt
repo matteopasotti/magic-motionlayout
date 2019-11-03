@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.matteopasotti.magicmotion.adapter.ExampleAdapter
+import com.matteopasotti.magicmotion.fifa.FifaCardActivity
 import com.matteopasotti.magicmotion.gallery.ShoesActivity
 import com.matteopasotti.magicmotion.youtube.YoutubeActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -30,7 +31,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
         ExampleAdapter.Example("Button chat", R.layout.motion_button_chat),
         ExampleAdapter.Example("ImageFilter", R.layout.motion_image_filter_poke),
         ExampleAdapter.Example("Joker", R.layout.activity_youtube, YoutubeActivity::class.java),
-        ExampleAdapter.Example("Menu Buttons", R.layout.motion_menu_buttons)
+        ExampleAdapter.Example("Menu Buttons", R.layout.motion_menu_buttons),
+        ExampleAdapter.Example("FIFA", R.layout.activity_fifa_card, FifaCardActivity::class.java)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".fifa.FifaCardActivity"/>
+
         <activity
             android:name=".ExampleActivity"
             android:screenOrientation="portrait" />

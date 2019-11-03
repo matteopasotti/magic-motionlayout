@@ -28,4 +28,5 @@
     <string name="title_trending">trending</string>
     <string name="title_subscriptions">subscriptions</string>
     <string name="title_inbox">inbox</string>
+    <string name="cover">player_cover</string>
 </resources>
