@@ -60,6 +60,31 @@
             <Transform android:rotationX="-55" />
         </Constraint>
 
+        <Constraint android:id="@+id/cover_left">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="300dp"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cover"
+                app:layout_marginEnd="100dp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/cover_right">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cover"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginStart="100dp"
+                app:layout_constraintVertical_bias="0.3"/>
+        </Constraint>
+
         <Constraint android:id="@+id/cover">
             <Layout
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -128,6 +153,31 @@
             <Transform
                 android:elevation="10dp"
                 android:rotationX="0" />
+        </Constraint>
+
+        <Constraint android:id="@+id/cover_left">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="300dp"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cover"
+                app:layout_marginEnd="250dp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/cover_right">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cover"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginStart="250dp"
+                app:layout_constraintVertical_bias="0.3"/>
         </Constraint>
 
         <Constraint android:id="@+id/cover">
@@ -220,6 +270,31 @@
                 app:layout_height="wrap_content"
                 app:layout_marginTop="16dp"/>
             <PropertySet app:alpha="1"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/cover_left">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="300dp"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cover"
+                app:layout_marginEnd="300dp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/cover_right">
+            <Layout
+                app:layout_width="wrap_content"
+                app:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cover"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginStart="300dp"
+                app:layout_constraintVertical_bias="0.3"/>
         </Constraint>
 
 
