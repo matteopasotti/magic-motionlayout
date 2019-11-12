@@ -22,26 +22,7 @@
         android:layout_height="300dp"
         app:cardCornerRadius="16dp"
         app:cardBackgroundColor="@color/black60"
-        app:cardElevation="0dp">
-
-       <!-- <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/bg_image"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:src="@drawable/football_bg"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-    </com.google.android.material.card.MaterialCardView>
+        app:cardElevation="0dp"/>
 
     <ImageView
         android:id="@+id/card_player"
@@ -96,7 +77,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <include
-        android:id="@+id/included_team_layout"
+        android:id="@+id/first_section_layout"
         layout="@layout/first_section_player_info"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -110,7 +91,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/included_team_layout"
+        app:layout_constraintTop_toBottomOf="@+id/first_section_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

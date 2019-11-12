@@ -9,9 +9,7 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.viewpager.widget.ViewPager
 import com.matteopasotti.magicmotion.R
 import com.matteopasotti.magicmotion.gallery.adapter.ShoesViewPagerAdapter
-import com.matteopasotti.magicmotion.gallery.model.Cart
 import com.matteopasotti.magicmotion.gallery.model.FactoryOutlet
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.shoe_view.*
 
 class ShoesActivity : AppCompatActivity() {
@@ -50,7 +48,6 @@ class ShoesActivity : AppCompatActivity() {
     private fun setupPager() {
         val pager = findViewById<ViewPager>(R.id.pager)
         pager.adapter = ShoesViewPagerAdapter(this)
-        setImage(list[0].url)
 
         pager.addOnPageChangeListener(motionPager as ViewPager.OnPageChangeListener)
         pager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
@@ -63,19 +60,10 @@ class ShoesActivity : AppCompatActivity() {
             }
 
             override fun onPageSelected(p0: Int) {
-                setImage(list[p0].url)
             }
 
         })
 
     }
 
-
-    private fun setImage(url: String) {
-        Picasso.get()
-            .load(url)
-            .resize(200, 200)
-            .centerCrop()
-            .into(shoeImage)
-    }
 }

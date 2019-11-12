@@ -25,11 +25,37 @@
         android:id="@+id/middleToEnd"
         app:constraintSetEnd="@+id/end"
         app:constraintSetStart="@+id/middle"
-        app:duration="1000">
+        app:duration="1500">
 
         <OnClick
             app:clickAction="toggle"
             app:targetId="@+id/card_player" />
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="55"
+                app:motionTarget="@id/first_section_layout" />
+
+            <KeyPosition
+                app:curveFit="linear"
+                app:framePosition="0"
+                app:keyPositionType="deltaRelative"
+                app:motionTarget="@+id/first_section_layout"
+                app:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="75"
+                app:motionTarget="@id/included_bio_layout" />
+
+            <KeyPosition
+                app:curveFit="linear"
+                app:framePosition="0"
+                app:keyPositionType="deltaRelative"
+                app:motionTarget="@+id/included_bio_layout"
+                app:transitionEasing="decelerate" />
+        </KeyFrameSet>
 
     </Transition>
 
@@ -100,7 +126,7 @@
                 android:translationY="0dp" />
         </Constraint>
 
-        <Constraint android:id="@+id/included_team_layout">
+        <Constraint android:id="@+id/first_section_layout">
             <Layout
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -112,7 +138,7 @@
 
         <Constraint android:id="@+id/included_bio_layout">
             <Layout
-                app:layout_constraintTop_toBottomOf="@+id/included_team_layout"
+                app:layout_constraintTop_toBottomOf="@+id/first_section_layout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -192,7 +218,7 @@
             <Transform android:rotationX="-80" />
         </Constraint>
 
-        <Constraint android:id="@+id/included_team_layout">
+        <Constraint android:id="@+id/first_section_layout">
             <Layout
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -207,7 +233,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/included_team_layout"
+                app:layout_constraintTop_toBottomOf="@+id/first_section_layout"
                 app:layout_width="0dp"
                 app:layout_height="wrap_content"/>
             <PropertySet app:alpha="0"/>
@@ -236,21 +262,19 @@
                 app:layout_constraintBottom_toBottomOf="@id/card_bg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_bg"
-                app:layout_height="wrap_content"
+                app:layout_height="180dp"
                 app:layout_marginStart="8dp"
-                app:layout_width="wrap_content" />
+                app:layout_width="130dp" />
             <Transform
                 android:elevation="12dp"
-                android:rotationX="0"
-                android:scaleX="0.9"
-                android:scaleY="0.9" />
+                android:rotationX="0" />
         </Constraint>
 
         <Constraint android:id="@+id/cover">
             <PropertySet app:alpha="0" />
         </Constraint>
 
-        <Constraint android:id="@+id/included_team_layout">
+        <Constraint android:id="@+id/first_section_layout">
             <Layout
                 app:layout_constraintTop_toBottomOf="@+id/card_player"
                 app:layout_constraintStart_toStartOf="parent"
@@ -263,7 +287,7 @@
 
         <Constraint android:id="@+id/included_bio_layout">
             <Layout
-                app:layout_constraintTop_toBottomOf="@+id/included_team_layout"
+                app:layout_constraintTop_toBottomOf="@+id/first_section_layout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_width="0dp"

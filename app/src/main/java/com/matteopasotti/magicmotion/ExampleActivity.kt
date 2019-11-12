@@ -11,11 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.matteopasotti.magicmotion.swipe.SwipeModel
 import com.matteopasotti.magicmotion.swipe.SwipeViewModel
-import com.squareup.picasso.Picasso
-import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.motion_swipe_cards.*
-import kotlinx.android.synthetic.main.motion_swipe_cards.motionLayout
-import kotlinx.android.synthetic.main.shoe_view.*
 
 class ExampleActivity : AppCompatActivity() {
 
@@ -70,15 +66,6 @@ class ExampleActivity : AppCompatActivity() {
                 }
 
             })
-        }
-
-
-        if(resources.getResourceEntryName(layout)?.equals("shoe_view") == true) {
-
-            val image = findViewById<CircleImageView>(R.id.shoe_image)
-            Picasso.get()
-                .load("https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/oxjiamptxuxupx5w8mcm/af-1-shadow-shoe-M8SqJM.jpg")
-                .into(image)
         }
     }
 
